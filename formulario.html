@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pesquisa de Satisfação</title>
+</head>
+<body>
+
+    <h1>Formulário de Pesquisa de Satisfação</h1>
+
+    <form action="#" method="post">
+        <!-- Dados Pessoais -->
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required><br><br>
+        </fieldset>
+        
+        <!-- Pesquisa -->
+        <fieldset>
+            <legend>Pesquisa</legend>
+
+            <p>1. Como você avalia a qualidade do nosso serviço?</p>
+            <input type="radio" id="excelente" name="qualidade_servico" value="excelente" required>
+            <label for="excelente">Excelente</label><br>
+            <input type="radio" id="bom" name="qualidade_servico" value="bom">
+            <label for="bom">Bom</label><br>
+            <input type="radio" id="regular" name="qualidade_servico" value="regular">
+            <label for="regular">Regular</label><br>
+            <input type="radio" id="ruim" name="qualidade_servico" value="ruim">
+            <label for="ruim">Ruim</label><br><br>
+            
+            <p>2. Qual é a probabilidade de você recomendar nossos serviços a um amigo ou colega?</p>
+            <input type="radio" id="muito_provavel" name="recomendacao" value="muito_provavel" required>
+            <label for="muito_provavel">Muito provável</label><br>
+            <input type="radio" id="provavel" name="recomendacao" value="provavel">
+            <label for="provavel">Provável</label><br>
+            <input type="radio" id="neutro" name="recomendacao" value="neutro">
+            <label for="neutro">Neutro</label><br>
+            <input type="radio" id="improvavel" name="recomendacao" value="improvavel">
+            <label for="improvavel">Improvável</label><br>
+            <input type="radio" id="muito_improvavel" name="recomendacao" value="muito_improvavel">
+            <label for="muito_improvavel">Muito improvável</label><br><br>
+
+            <label for="frequencia">3. Com que frequência você utiliza nossos serviços?</label><br>
+            <select id="frequencia" name="frequencia" required>
+                <option value="diariamente">Diariamente</option>
+                <option value="semanalmente">Semanalmente</option>
+                <option value="mensalmente">Mensalmente</option>
+                <option value="raramente">Raramente</option>
+            </select><br><br>
+        </fieldset>
+
+        <input type="checkbox" id="compartilhar" name="compartilhar" value="sim">
+        <label for="compartilhar">Autorizo compartilhar minha resposta com terceiros.</label><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
